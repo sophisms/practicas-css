@@ -1,0 +1,66 @@
+body{
+    padding: 20px;
+    background: linear-gradient(to right, rgb(162, 201, 233), rgb(212, 236, 243) );
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+ol {
+max-width: 950px;
+counter-reset: my-awesome-counter;
+list-style: none;
+padding-left: 40px;
+}
+ol li {
+margin: 0 0 0.5rem 0;
+counter-increment: my-awesome-counter;
+position: relative;
+}
+ol li::before {
+content: counter(my-awesome-counter);
+color: white;
+font-size: 1.5rem;
+font-weight: bold;
+position: absolute;
+--size: 32px;
+left: calc(-1 * var(--size) - 10px);
+line-height: var(--size);
+width: var(--size);
+height: var(--size);
+top: 0;
+transform: rotate(-10deg);
+background: black;
+border-radius: 50%;
+text-align: center;
+box-shadow: 1px 1px 0 #999;
+}
+
+h1 {-webkit-text-stroke: 1px black;
+    font-size: 2cm;
+    font-family: cursive;
+    text-align: center;
+    color: turquoise;
+}
+
+h2 {
+    color: white;
+}
+
+li {
+    font-size: medium;
+    font-family: cursive;
+    background-color: rgba(64, 224, 208, 0.699);
+    border: 1px solid black;
+}
+
+p {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+
+/*img
+{
+    display:block;
+    margin:auto;
+    }*/
